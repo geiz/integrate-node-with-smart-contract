@@ -1,4 +1,5 @@
 const express = require('express');
+const Web3 = require('web3');
 const connectDB = require('./config/db');
 const path = require('path');
 const cors = require('cors');
@@ -23,6 +24,7 @@ app.use('/api/profile', require('./routes/api/profile'));
 app.use('/api/posts', require('./routes/api/posts'));
 app.use('/api/tokens', require('./routes/api/tokens'));
 app.use('/api/token-pairs', require('./routes/api/tokenPairs'));
+app.use('/api/davidapitest', require('./routes/api/davidapitest'));
 
 // Serve static assets in production
 if (process.env.NODE_ENV === 'production') {
