@@ -1,70 +1,15 @@
-# Getting Started with Create React App
+# Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## This project was provided to me as a test, there are some unused bloat packages.
 
-## Available Scripts
+1. yarn
+2. create .env and put your infura key here
+3. `node test.js` to run a single call to the blockchain smart contract on blast.
+4. `node server.js` to run the server. Then call endpoints `localhost:2001/api/davidapitest/` and `localhost:2001/api/davidapitest/getItemDetails`. They should be working 
 
-In the project directory, you can run:
+`localhost:2001/api/davidapitest/` is a base infura interation, it should yield
+{"jsonrpc":"2.0","id":1,"result":"0x7bca2b"}
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`localhost:2001/api/davidapitest/getItemDetails` interacts with a mainnet blastscan.io contract. It should yield 
+{"0":"Rudger L1 Rifle","1":"A simple rifle created by Rudger Industries. Cheap and reliable.","2":"16","3":"3","4":"0","5":"20","6":"165000","7":"Rifle","8":"https://ipfs.io/ipfs/QmZoqm6rFUD3Yv1yyUcjdi1weM9tTaTtiNqTkzVYKpB7d2/1.png","9":"Basic","__length__":10,"name":"Rudger L1 Rifle","description":"A simple rifle created by Rudger Industries. Cheap and reliable.","damage":"16","attackSpeed":"3","durability":"0","durabilityPerUse":"20","maxDurability":"165000","weaponType":"Rifle","imageUrl":"https://ipfs.io/ipfs/QmZoqm6rFUD3Yv1yyUcjdi1weM9tTaTtiNqTkzVYKpB7d2/1.png","rarity":"Basic"}

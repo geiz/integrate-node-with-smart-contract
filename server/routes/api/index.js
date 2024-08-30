@@ -6,7 +6,7 @@ const {TokenListProvider} = require('@solana/spl-token-registry');
 // const { Metaplex } = require('@metaplex-foundation/js');
 // const { Metadata } = require('@metaplex-foundation/mpl-token-metadata');
 
-axios.defaults.headers.common['X-CMC_PRO_API_KEY'] = 'bc44268c-f664-4b26-98c7-7215ae4e4ec9'
+axios.defaults.headers.common['X-CMC_PRO_API_KEY'] = '[YOUR KEY HERE]'
 
 const token = require('../../models/Token');
 
